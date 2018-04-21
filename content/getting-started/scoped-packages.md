@@ -6,7 +6,7 @@ featured: true
 # How to Work with Scoped Packages
 *Requires npm version 2 or greater*
 
-Scopes are used to group related packages together, and to create a namespace, like a domain, for npm modules. This is explained in more detail [here](http://localhost:5000/misc/scope).
+Scopes are used to group related packages together, and to create a namespace, like a domain, for npm modules. This is explained in more detail [here](/misc/scope).
 
 If a package's name begins with `@`, then it is a **scoped package**. The scope is everything in between the `@` and the slash.
 

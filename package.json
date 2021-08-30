@@ -11,7 +11,9 @@
     "build": "bin/build.sh",
     "pretest": "npm run build",
     "prestart": "npm run build",
-    "test": "standard public/js/main.js && mocha"
+    "test": "standard public/js/main.js && mocha",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -41,7 +43,8 @@
     "lodash": "^4.11.1",
     "marky-markdown": "~11.3.2",
     "strftime": "^0.10.0",
-    "walkdir": "0.0.12"
+    "walkdir": "0.0.12",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "cheerio": "~1.0.0-rc.2",
@@ -50,5 +53,6 @@
     "nodemon": "^1.8.1",
     "standard": "^10.0.1",
     "supertest": "^3.0.0"
-  }
+  },
+  "snyk": true
 }
